@@ -5,7 +5,7 @@
 }
 
 .inputs input,
-select,
+.inputs select,
 textarea {
   outline: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
@@ -24,11 +24,34 @@ textarea {
   height: 100px;
 }
 
+.box {
+  & .card-tache {
+    padding-block: 10px;
+    width: 200px;
+    background-color: #82fc82;
+    border-radius: 20px;
+  }
+}
+
+button {
+  background: transparent;
+}
+
+input:valid,
+textarea:valid {
+  box-shadow: 0px 4px 11px 0px #82fc82 !important;
+}
+
+input:invalid,
+textarea:invalid {
+  background-color: white;
+}
+
 input[type="submit"] {
   cursor: pointer;
   transition: 0.3s;
 
   &:hover {
-    box-shadow: 0px 4px 11px 0px rgba(255, 2, 2, 0.418);
+    box-shadow: 0px 4px 11px 0px rgba(255, 2, 2, 0.418) !important;
   }
 }
