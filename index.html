@@ -26,12 +26,12 @@
       </div>
       <div class="inputs d-flex justify-content-center gap-4 my-4">
         <select name="priorite" id="priority" class="border-0 p-2" required>
-          <option value="P1">P1</option>
+          <option value="P1" selected>P1</option>
           <option value="P2">P2</option>
           <option value="P3">P3</option>
         </select>
         <select name="statut" id="status" class="border-0 p-2" required>
-          <option value="To-do">To-do</option>
+          <option value="To-do" selected>To-do</option>
           <option value="Doing">Doing</option>
           <option value="Done">Done</option>
         </select>
@@ -54,7 +54,7 @@
     </div>
 
     <div class="gest_taches container d-flex justify-content-evenly align-items-center mt-5">
-      <div class="box">
+      <div class="box-todo">
         <h3 class="border-2 border-bottom border-secondary text-center mb-4">TODO</h3>
         <div class="taches">
           <div class="card-tache" draggable="true">
@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-      <div class="box">
+      <div class="box-doing">
         <h3 class="border-2 border-bottom border-secondary text-center mb-4">DOING</h3>
         <div class="taches">
           <div class="card-tache">
@@ -92,7 +92,7 @@
           </div>
         </div>
       </div>
-      <div class="box">
+      <div class="box-done">
         <h3 class="border-2 border-bottom border-secondary text-center mb-4">DONE</h3>
         <div class="taches">
           <div class="card-tache">

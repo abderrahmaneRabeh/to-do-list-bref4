@@ -24,8 +24,11 @@ textarea {
   height: 100px;
 }
 
-.box {
+.box-todo,
+.box-doing,
+.box-done {
   & .card-tache {
+    margin-block: 20px;
     padding-block: 10px;
     width: 200px;
     background-color: #82fc82;
