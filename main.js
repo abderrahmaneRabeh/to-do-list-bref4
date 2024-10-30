@@ -1,4 +1,5 @@
 const btn_ajouter = document.getElementById("btn-add");
+const taches = document.querySelector(".gest_taches");
 
 // ajouter une tâche
 
@@ -68,3 +69,14 @@ function total_taches() {
 }
 
 total_taches();
+
+// supprimer une tâche
+
+const btn_supprimer = document.querySelectorAll(".btn-delete");
+
+taches.addEventListener("click", (e) => {
+  if (e.target.classList.contains("fa-trash")) {
+    e.target.closest(".card-tache").remove();
+    total_taches();
+  }
+});
