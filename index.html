@@ -99,7 +99,30 @@
           <h3 class="border-2 border-bottom border-secondary text-center mb-4">
             TODO
           </h3>
-          <div class="taches"></div>
+          <div class="taches">
+            <div class="card-tache">
+              <div
+                class="card-header-tache d-flex justify-content-center gap-5 border-4 border-white border-bottom"
+              >
+                <span id="card-title-tache" class="h5">Titre</span>
+                <span id="card-date-tache">22/02/2022</span>
+              </div>
+              <div class="card-body-tache">
+                <p id="card-description" class="text-center">Description</p>
+              </div>
+              <div class="card-footer-tach d-flex justify-content-evenly">
+                <span id="card-priority">P1</span>
+                <button class="border-0">
+                  <i class="fa-solid fa-trash text-danger"></i>
+                </button>
+                <select name="statut-tache" class="tach_status">
+                  <option value="To-do">To-do</option>
+                  <option value="Doing">Doing</option>
+                  <option value="Done">Done</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="box-doing">
           <h3 class="border-2 border-bottom border-secondary text-center mb-4">
