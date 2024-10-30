@@ -11,6 +11,10 @@ const statut = document.getElementById("status");
 btn_ajouter.addEventListener("click", (e) => {
   e.preventDefault();
 
+  if (titre.value == "" || description.value == "" || date.value == "") {
+    return;
+  }
+
   const tache = {
     titre: titre.value,
     description: description.value,
@@ -34,9 +38,9 @@ btn_ajouter.addEventListener("click", (e) => {
       <p id="card-description" class="text-center">${tache.description}</p>
     </div>
     <div class="card-footer-tach d-flex justify-content-evenly">
-      <span id="card-priority">${tache.priorite}</span>
+      <span id="card-priority" class="bg-white px-1 rounded-3">${tache.priorite}</span>
       <button class="border-0"><i class="fa-solid fa-trash text-danger"></i></button>
-      <span id="card-status">${tache.statut}</span>
+      <span id="card-status" class="bg-white px-1 rounded-3">${tache.statut}</span>
     </div>
   `;
 
@@ -50,4 +54,17 @@ btn_ajouter.addEventListener("click", (e) => {
   date.value = "";
   priorite.value = "";
   statut.value = "";
+
+  total_taches();
 });
+
+// nombre des tâches
+
+const nb_taches = document.getElementById("nb_taches");
+
+function total_taches() {
+  const taches = document.querySelectorAll(".card-tache");
+  nb_taches.innerHTML = taches.length;
+}
+
+total_taches();
