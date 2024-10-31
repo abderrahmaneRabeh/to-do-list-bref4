@@ -39,7 +39,7 @@ textarea {
     width: 200px;
     background-color: #82fc82;
     border-radius: 20px;
-    cursor: move;
+    /* cursor: move; */
   }
 }
 
