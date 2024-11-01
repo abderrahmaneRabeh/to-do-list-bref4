@@ -100,7 +100,7 @@ function afficher_taches(list_taches) {
     card_tache.setAttribute("draggable", "true");
 
     card_tache.innerHTML = ` 
-    <div class="card-header-tache d-flex justify-content-center gap-5 border-4 border-white border-bottom">
+    <div class="card-header-tache d-flex justify-content-center gap-5 border-4 border-white border-bottom align-items-center">
       <span id="card-title-tache" class="h5">${tache.titre}</span>
       <span id="card-date-tache">${tache.date}</span>
     </div>

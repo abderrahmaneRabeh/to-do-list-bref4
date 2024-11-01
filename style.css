@@ -27,6 +27,7 @@ textarea {
   resize: none;
   width: 500px;
   height: 100px;
+  transition: 0.3s;
 }
 
 .box-todo,
@@ -80,5 +81,49 @@ input[type="submit"] {
   &:hover {
     background: #000;
     color: #fff;
+  }
+}
+
+@media (width < 770px) {
+  form {
+    & .inputs {
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      & textarea {
+        width: 300px;
+      }
+    }
+  }
+}
+@media (width < 600px) {
+  .gest_taches {
+    & h3 {
+      font-size: 1rem !important;
+    }
+
+    & .card-tache {
+      width: 150px;
+
+      & #card-date-tache {
+        font-size: 10px !important;
+      }
+
+      & #card-priority {
+        font-size: 10px !important;
+      }
+
+      & .tach_status {
+        font-size: 10px !important;
+      }
+    }
+  }
+
+  .nb_taches_text {
+    font-size: 0.7rem !important;
+  }
+  #no-taches {
+    font-size: 0.7rem !important;
   }
 }
