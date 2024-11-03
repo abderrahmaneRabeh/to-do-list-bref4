@@ -186,3 +186,6 @@ taches.addEventListener("change", (e) => {
     }
   }
 });
+
+// drag and drop
+
